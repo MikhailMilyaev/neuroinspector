@@ -13,7 +13,7 @@
           <a href="#economy" class="hover:text-blue-600 transition text-slate-600">Экономика</a>
           <a href="#pilot" class="hover:text-blue-600 transition text-slate-600">Пилот</a>
         </nav>
-        <button @click="scrollToContact" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition font-bold text-sm shadow-lg shadow-blue-200 uppercase">
+        <button @click="scrollToContact" class="bg-blue-600 text-white px-3 py-2 md:px-5 md:py-2.5 rounded-lg hover:bg-blue-700 transition font-bold text-[10px] md:text-sm shadow-lg shadow-blue-200 uppercase whitespace-nowrap">
           Запустить пилот
         </button>
       </div>
@@ -263,9 +263,16 @@
         <div class="max-w-4xl mx-auto bg-slate-900 rounded-[3rem] p-12 md:p-20 text-center text-white shadow-2xl shadow-blue-900/20">
           <h2 class="text-3xl md:text-5xl font-bold mb-8 italic">Готовы оцифровать качество?</h2>
           <p class="text-slate-400 text-lg md:text-xl mb-12">Оставьте заявку на бесплатный пилот на вашу производственную линию.</p>
-          <div class="flex flex-col md:flex-row gap-6 justify-center">
-             <a href="mailto:info@neuroinspector.ru" class="bg-blue-600 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-blue-500 transition shadow-lg shadow-blue-900/40">info@neuroinspector.ru</a>
-             <a href="tel:+78000000000" class="bg-slate-800 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-slate-700 transition border border-slate-700">+7 (800) 000-00-00</a>
+          <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+            <a href="mailto:info@neuroinspector.ru" 
+              class="w-full md:w-auto bg-blue-600 px-4 py-4 md:px-10 md:py-5 rounded-2xl font-bold text-sm md:text-xl hover:bg-blue-500 transition shadow-lg shadow-blue-900/40 break-all">
+              info@neuroinspector.ru
+            </a>
+            
+            <a href="tel:+78000000000" 
+              class="w-full md:w-auto bg-slate-800 px-4 py-4 md:px-10 md:py-5 rounded-2xl font-bold text-sm md:text-xl hover:bg-slate-700 transition border border-slate-700 whitespace-nowrap">
+              +7 (800) 000-00-00
+            </a>
           </div>
         </div>
       </div>
