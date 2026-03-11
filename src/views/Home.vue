@@ -1,23 +1,36 @@
 <template>
   <div id="top" class="min-h-screen bg-slate-50 text-slate-900 font-sans scroll-smooth overflow-x-hidden w-full">
-    <header class="bg-white/90 backdrop-blur-md border-b sticky top-0 z-50 w-full">
-      <div class="container mx-auto px-3 sm:px-4 md:px-6 py-3 sm:py-4 flex justify-between items-center gap-2">
-        <div @click="scrollToTop" class="text-lg sm:text-xl md:text-2xl font-bold text-blue-700 tracking-tight uppercase cursor-pointer hover:opacity-80 transition shrink-0">
-          Нейроинспектор
-        </div>
-        <nav class="hidden xl:flex space-x-6 font-medium text-[11px] uppercase tracking-wider">
-          <a href="#problems" class="hover:text-blue-600 transition text-slate-600">Проблемы</a>
-          <a href="#capabilities" class="hover:text-blue-600 transition text-slate-600">Возможности</a>
-          <a href="#setup" class="hover:text-blue-600 transition text-slate-600">Настройка</a>
-          <a href="#integration" class="hover:text-blue-600 transition text-slate-600">IT-Контур</a>
-          <a href="#economy" class="hover:text-blue-600 transition text-slate-600">Экономика</a>
-          <a href="#pilot" class="hover:text-blue-600 transition text-slate-600">Пилот</a>
-        </nav>
-        <button @click="scrollToContact" class="bg-blue-600 text-white px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-lg hover:bg-blue-700 transition font-bold text-[10px] sm:text-xs md:text-sm shadow-lg shadow-blue-200 uppercase whitespace-nowrap shrink-0">
-          Запустить пилот
-        </button>
-      </div>
-    </header>
+<header class="bg-white/90 backdrop-blur-md border-b sticky top-0 z-50 w-full">
+  <div class="container mx-auto px-3 sm:px-4 md:px-6 py-3 sm:py-4 flex justify-between items-center gap-1 sm:gap-2">
+    
+    <div @click="scrollToTop" class="flex items-center gap-1.5 sm:gap-3 cursor-pointer hover:opacity-80 transition shrink-0">
+      <img 
+        src="/images/logo.png" 
+        alt="Нейроинспектор" 
+        class="h-4 sm:h-5 md:h-6 w-auto object-contain"
+      />
+      <span class="text-[15px] sm:text-xl md:text-2xl font-bold text-blue-700 tracking-tighter sm:tracking-tight uppercase">
+        Нейроинспектор
+      </span>
+    </div>
+
+    <nav class="hidden lg:flex items-center space-x-4 xl:space-x-8 font-bold text-[10px] xl:text-xs uppercase tracking-widest text-slate-600">
+      <a href="#problems" class="cursor-pointer hover:text-blue-600 transition-colors">Проблемы</a>
+      <a href="#capabilities" class="cursor-pointer hover:text-blue-600 transition-colors">Возможности</a>
+      <a href="#setup" class="cursor-pointer hover:text-blue-600 transition-colors">Настройка</a>
+      <a href="#integration" class="cursor-pointer hover:text-blue-600 transition-colors">Безопасность</a>
+      <a href="#economy" class="cursor-pointer hover:text-blue-600 transition-colors">Экономика</a>
+    </nav>
+
+    <button 
+      @click="scrollToContact" 
+      class="cursor-pointer bg-blue-600 text-white px-2.5 py-2 sm:px-5 sm:py-3 rounded-lg hover:bg-blue-700 active:scale-95 transition-all font-bold text-[9px] xs:text-[10px] sm:text-xs uppercase whitespace-nowrap shrink-0 shadow-sm"
+    >
+      Запустить пилот
+    </button>
+    
+  </div>
+</header>
 
     <section class="relative bg-slate-900 text-white py-12 md:py-20 lg:py-32 overflow-hidden w-full">
       <div class="absolute inset-0 opacity-10">
@@ -33,7 +46,7 @@
               Система компьютерного зрения для автоматизации контроля качества на скоростях до 120 FPS с точностью детекции 98%+.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 w-full">
-              <button @click="scrollToContact" class="w-full sm:w-auto text-center bg-blue-600 px-6 sm:px-8 py-4 rounded-xl font-bold text-base sm:text-lg hover:bg-blue-500 transition-all shadow-xl shadow-blue-900/40">
+              <button @click="scrollToContact" class="cursor-pointer w-full sm:w-auto text-center bg-blue-600 px-6 sm:px-8 py-4 rounded-xl font-bold text-base sm:text-lg hover:bg-blue-500 transition-all shadow-xl shadow-blue-900/40">
                 Внедрить пилот бесплатно
               </button>
               <div class="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-4 px-4 sm:px-6 py-4 bg-slate-800/50 rounded-xl border border-slate-700 shrink-0">
@@ -277,10 +290,10 @@
       </div>
     </section>
 
-    <footer class="bg-slate-900 text-slate-500 py-8 sm:py-10 md:py-16 text-center border-t border-slate-800 w-full">
+    <footer class="bg-slate-900 text-slate-500 py-4 sm:py-6 md:py-8 text-center border-t border-slate-800 w-full">
       <div class="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 w-full">
         <div class="text-center md:text-left">
-          <div class="text-[10px] sm:text-xs md:text-sm font-bold text-slate-400 uppercase tracking-widest">ООО «НЕЙРОИНСПЕКТР»</div>
+          <div class="text-[10px] sm:text-xs md:text-sm font-bold text-slate-400 uppercase tracking-widest">ООО «НЕЙРОИНСПЕКТОР»</div>
         </div>
         <div class="text-[9px] sm:text-[10px] md:text-sm opacity-50">&copy; 2026 Все права защищены.</div>
       </div>
